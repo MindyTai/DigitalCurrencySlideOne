@@ -1,0 +1,67 @@
+<!doctype html>
+    <html lang="en" prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./static/images/favicon.png">
+        <title>教你挖出以太幣！</title>
+        <link rel="stylesheet" type='text/css' media='all' href="./static/css/webslides.css">
+        <link rel="stylesheet" type="text/css" media="all" href="./static/css/svg-icons.css">
+        <script type="text/javascript">
+            function displayNextImage() {
+                x = (x === images.length - 1) ? 0 : x + 1;
+                document.getElementById("img").src = images[x];
+            }
+            function displayPreviousImage() {
+                x = (x <= 0) ? images.length - 1 : x - 1;
+                document.getElementById("img").src = images[x];
+            }
+            function startTimer() {
+                console.log("123")
+                setInterval(displayNextImage, 1000);
+            }
+            var images = [], x = -1;
+            images[0] = "./static/images/pool_1.svg";
+            images[1] = "./static/images/pool_2.svg";
+        </script>
+    </head>
+    <body onload="startTimer()">
+        <header role="banner">
+            <nav role="navigation">
+                <p class="logo">
+                    <a href="chart1.html" title="HOME"></a>
+                </p>
+            </nav>
+        </header>
+        <main role="main">
+            <article id="webslides">
+                <section>
+                    <span class="background dark " style="background-color:#313E50"></span>
+                    <div class="wrap">
+                        <div class="grid vertical-align">
+                            <div class="column">
+                                <h3  class="slideInLeft">
+                                    <strong style="color:#fff">尋找礦池</strong>
+                                </h3>
+                                <br>
+                                <pre  class="slideInLeft"><p style="  font-family: 'Noto Sans TC', sans-serif; " >隨著挖礦難度慢慢提升，一個人的算力已經不太能挖到加密貨幣，於是有了礦池的出現。礦池的目的在於集結裡頭所有礦工的算力，讓挖到以太幣的機率大為提升。選擇連線延遲低、規模大（以確保收入穩定）以及手續費低的礦池，能使挖礦的效率最大化。</p></pre>
+                                <br>
+                                <br>
+                                <a href="chart1.html#slide=2" title="back"><img class="fadeInUp" src="./static/images/arrow.svg"id="arrow"style="height:50px;" onmouseover="hover(this);" onmouseout="unhover(this);" alt=""></a>  
+                            </div>
+                            <div class="column">
+                                <img class="wrap zoomIn hard" id="img" src="./static/images/pool_1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <script src="./static/js/webslides.js"></script>
+        <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            window.ws = new WebSlides();
+        </script>
+        <script defer src="./static/js/svg-icons.js"></script>
+    </body>
+</html>

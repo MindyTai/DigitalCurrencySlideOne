@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./static/images/favicon.png">
+    <title>教你挖出以太幣！</title>
+    <link rel="stylesheet" type='text/css' media='all' href="./static/css/webslides.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./static/css/svg-icons.css">
+
+    <script type = "text/javascript">
+      function displayNextImage() {
+          x = (x === images.length - 1) ? 0 : x + 1;
+          document.getElementById("img").src = images[x];
+      }
+
+      function displayPreviousImage() {
+          x = (x <= 0) ? images.length - 1 : x - 1;
+          document.getElementById("img").src = images[x];
+      }
+
+      function startTimer() {
+      
+          setInterval(displayNextImage, 800);
+      }
+
+      var images = [], x = -1;  
+    
+      images[0] = "./static/images/cpu_4.svg";
+      images[1] = "./static/images/cpu_5.svg";
+      images[2] = "./static/images/cpu_6.svg";
+      images[3] = "./static/images/cpu_7.svg";
+      images[4] = "./static/images/cpu_8.svg";
+
+    </script>
+  </head>
+
+<body  onload = "startTimer()">
+  <header role="banner">
+    <nav role="navigation">
+      <p class="logo">
+        <a href="chart1.html" title="HOME"></a>
+      </p>
+    </nav>
+  </header>
+  <main role="main">
+    <article id="webslides">
+      <section>
+        <span class="background dark " style="background-color:#313E50"></span>
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h3 class="slideInLeft">
+                <strong style="color:#fff" >要用甚麼樣的硬體?</strong>
+              </h3>
+              <br>
+              <pre class="slideInLeft"><p style="  font-family: 'Noto Sans TC', sans-serif; " ><strong>CPU</strong>及<strong>GPU</strong>是挖礦最基本的要件，但挖礦的難度隨著時間提升，兩者的算力漸漸不敷使用，為提升挖礦速度，於是出現了<strong>ASIC礦機</strong>。而以太幣本身的機制是設計成<strong>抗ASIC</strong>，避免算力太集中的狀況，以確保去中心化。因此，挖以太幣以<strong>CPU</strong>及<strong>GPU</strong>為主。</pre>
+                <br>
+                <br>
+                <a href="chart1.html#slide=2" title="back"><img class="fadeInUp" src="./static/images/arrow.svg"id="arrow"style="height:50px;" onmouseover="hover(this);" onmouseout="unhover(this);" alt="" ></a>
+             </div>
+              <div class="column">
+                <img class="wrap zoomIn hard " id="img" src="./static/images/cpu_4.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>  
+     </article>
+    </main>
+    <script src="./static/js/webslides.js"></script>
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+    <script defer src="./static/js/svg-icons.js"></script>
+  </body>
+</html>

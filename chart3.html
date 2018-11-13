@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./static/images/favicon.png">
+        <title>教你挖出以太幣！</title>
+        <link rel="stylesheet" type='text/css' media='all' href="./static/css/webslides.css">
+        <link rel="stylesheet" type="text/css" media="all" href="./static/css/svg-icons.css">
+        <script type="text/javascript">
+            function displayNextImage() {
+                x = (x === images.length - 1) ? 0 : x + 1;
+                document.getElementById("img").src = images[x];
+            }
+
+            function displayPreviousImage() {
+                x = (x <= 0) ? images.length - 1 : x - 1;
+                document.getElementById("img").src = images[x];
+            }
+
+            function startTimer() {
+
+                setInterval(displayNextImage, 800);
+            }
+
+            var images = [], x = -1;
+            images[0] = "./static/images/wallet_1.svg";
+            images[1] = "./static/images/wallet_2.svg";
+            images[2] = "./static/images/wallet_3.svg";
+            images[3] = "./static/images/wallet_4.svg";
+            images[4] = "./static/images/wallet_5.svg";
+            images[5] = "./static/images/wallet_6.svg";
+            images[6] = "./static/images/wallet_7.svg";
+        </script>
+    </head>
+    <body onload="startTimer()">
+        <header role="banner">
+            <nav role="navigation">
+                <p class="logo">
+                    <a href="chart1.html" title="HOME"></a>
+                </p>
+                <ul>
+                </ul>
+            </nav>
+        </header>
+        <main role="main">
+            <article id="webslides">
+                <section>
+                    <span class="background dark " style="background-color:#313E50"></span>
+                    <div class="wrap">
+                        <div class="grid vertical-align">
+                            <div class="column">
+                                <h3  class="slideInLeft">
+                                    <strong style="color:#fff">申請電子錢包</strong>
+                                </h3>
+                                <br>
+                                <pre  class="slideInLeft"><p style="  font-family: 'Noto Sans TC', sans-serif; " >線上申請電子錢包，常用的有 <strong><a href="https://metamask.io/" target="_blank">MetaMask</a></strong> 以及 <strong><a href="https://www.myetherwallet.com/" target="_blank">MyEtherWallet</a></strong> 。或是可以直接用線上交易所的電子錢包，例如 <strong><a href="https://bittrex.com/" target="_blank">Bittrex</a></strong> 以及 <strong><a href="https://poloniex.com/" target="_blank">POLONIEX</a></strong> 。</p></pre>
+                                <br>
+                                <br>
+                                <a href="chart1.html#slide=2"title="back"><img class="fadeInUp" src="./static/images/arrow.svg"id="arrow"style="height:50px;" onmouseover="hover(this);" onmouseout="unhover(this);" alt=""></a> 
+                            </div>
+                            <div class="column">
+                                <img class="wrap zoomIn hard" id="img" src="./static/images/wallet_1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <script src="./static/js/webslides.js"></script>
+        <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            window.ws = new WebSlides();
+        </script>
+        <script defer src="./static/js/svg-icons.js"></script>
+    </body>
+</html>
